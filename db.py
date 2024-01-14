@@ -5,7 +5,7 @@ def ln(x):
 alunos = []
 
 
-frutas_calorias = {
+frutas = {
     "Abacate": 160,
     "Banana (madura)": 105,
     "Coco (polpa crua)": 354,
