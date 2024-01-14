@@ -1,8 +1,8 @@
 from db import *
 
-# Exemplo de acesso aos valores do dicionário
-for fruta, info_nutricional in frutas.items():
-    ln(30)
-    for valor in fruta:
-        print(valor.nome)
-    print(f"{fruta}: {info_nutricional}")
+# Ordena o dicionário por valores calóricos em ordem decrescente
+frutas_calorias_ordenadas = dict(sorted(frutas_calorias.items(), key=lambda item: item[1], reverse=True))
+
+# Exibe as frutas ordenadas
+for fruta, calorias in frutas_calorias_ordenadas.items():
+    print(f"{fruta}: {calorias} calorias por 100g")
