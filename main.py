@@ -1,20 +1,8 @@
 from db import *
 
-for i in range(2):
-    aluno = {
-        "Nome": str(input("Digite o nome do novo aluno:")),
-        "Idade": int(input("Digite a idade do novo aluno: ")),
-        "Turma": str(input("Digite a turma: ")),
-        "CPF": int(input("Digite o CPF: "))
-    }
-    alunos.append(aluno)
+# Exemplo de acesso aos valores do dicionário
+for fruta, info_nutricional in frutas.items():
     ln(30)
-
-
-
-for aluno in alunos:
-    print(f"""
-    Nome: {aluno["Nome"]}
-    Idade: {aluno["Idade"]}
-    """)
-    ln(30)
+    for valor in fruta:
+        print(valor.nome)
+    print(f"{fruta}: {info_nutricional}")
