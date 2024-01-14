@@ -1,6 +1,6 @@
 from db import *
 
-for i in range(3):
+for i in range(2):
     aluno = {
         "Nome": str(input("Digite o nome do novo aluno:")),
         "Idade": int(input("Digite a idade do novo aluno: ")),
