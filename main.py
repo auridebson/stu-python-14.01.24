@@ -43,6 +43,5 @@ ln(50)
 print(f"""
     PARABÉNS {clientes[cliSorteado]["Nome"]}, 
     você que tem o CPF {clientes[cliSorteado]["CPF"]} e 
-    última compra no valor de R$ {clientes[cliSorteado]["Valor"]} foi o grande felizardo!
-""")
+    última compra no valor de R$ {clientes[cliSorteado]["Valor"]} foi o grande felizardo!""")
 ln(50)
