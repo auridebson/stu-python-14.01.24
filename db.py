@@ -36,3 +36,8 @@ frutas = {
     "Carambola": 31,
     "Maracujá": 68
 }
+
+clientes = []
+
+compra = {}
+
