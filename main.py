@@ -1,5 +1,5 @@
 from db import *
-from random import random
+import random
 
 # # Ordena o dicionário por valores calóricos em ordem decrescente
 # frutas_ordenadas = dict(sorted(frutas.items(), key=lambda item: item[1], reverse=True))
@@ -21,7 +21,9 @@ def AddCart():
     clientes.append(compra)
 
 
-
+def sorteia():
+    sorteado = random(clientes)
+    return sorteado
 
 while True:
     menu = int(input(""""
@@ -33,5 +35,14 @@ while True:
         case 1:
             AddCart()
         case 2:
-            print(clientes)
             break
+
+cliSorteado = random.randint(0,len(clientes)-1)
+
+ln(50)
+print(f"""
+    PARABÉNS {clientes[cliSorteado]["Nome"]}, 
+    você que tem o CPF {clientes[cliSorteado]["CPF"]} e 
+    última compra no valor de R$ {clientes[cliSorteado]["Valor"]} foi o grande felizardo!
+""")
+ln(50)
