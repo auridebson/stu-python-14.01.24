@@ -45,3 +45,15 @@ print(f"""
     você que tem o CPF {clientes[cliSorteado]["CPF"]} e 
     última compra no valor de R$ {clientes[cliSorteado]["Valor"]} foi o grande felizardo!""")
 ln(50)
+
+i = 0
+for cliente in clientes:
+    if cliente["Valor"] > i:
+        nomeMax = cliente["Nome"]
+        valorMax = cliente["Valor"]
+
+
+print(f"""
+    A maior compra foi de {nomeMax} no valor de R$ {valorMax}.
+    """)
+ln(50)
